@@ -1,19 +1,39 @@
-<!DOCTYPE html> 
-<html class="no-js" lang="en"> 
-    <head>
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form</title>
+</head>
 <body>
-    <form>
-    <fieldset labels="Form">
-    <input type="text" labels="Your Full Name*">
-    <input type="email" labels="Email*">
-    <input type="number" labels="Phone Number*">
-    <p>Preffered Contact Method*</p>
-        <input type="radio" id="phone" name="Phone" value="phone">
-        <label for="phone">Phone</label><br>
-        <input type="radio" id="email" name="Email" value="email">
-        <label for="email">email</label><br>
-    <input type="textarea" labels="Message*">
-    <input type=”submit” labels="Submit">
-     </form>
-</body>
 
+  <form>
+    <!-- Full Name -->
+    <label for="full-name">Your Full Name*</label><br>
+    <input type="text" id="full-name" name="full-name" required><br><br>
+
+    <!-- Email -->
+    <label for="email">Email*</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <!-- Phone Number -->
+    <label for="phone">Phone Number*</label><br>
+    <input type="number" id="phone" name="phone" required><br><br>
+		
+    <!-- Preferred Contact Method -->
+    <p>Preferred Contact Method*</p>
+    <input type="radio" id="contact-phone" name="contact-method" value="phone" required>
+    <label for="contact-phone">Phone</label><br>
+
+    <input type="radio" id="contact-email" name="contact-method" value="email">
+    <label for="contact-email">Email</label><br><br>
+
+    <!-- Message -->
+    <label for="message">Message*</label><br>
+    <textarea id="message" name="message" rows="4" cols="40" required></textarea><br><br>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
