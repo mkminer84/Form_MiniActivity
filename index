@@ -1,0 +1,19 @@
+<!DOCTYPE html> 
+<html class="no-js" lang="en"> 
+    <head>
+<body>
+    <form>
+    <fieldset labels="Form">
+    <input type="text" labels="Your Full Name*">
+    <input type="email" labels="Email*">
+    <input type="number" labels="Phone Number*">
+    <p>Preffered Contact Method*</p>
+        <input type="radio" id="phone" name="Phone" value="phone">
+        <label for="phone">Phone</label><br>
+        <input type="radio" id="email" name="Email" value="email">
+        <label for="email">email</label><br>
+    <input type="textarea" labels="Message*">
+    <input type=”submit” labels="Submit">
+     </form>
+</body>
+
